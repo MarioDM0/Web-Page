@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/diseño.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Mario DM</title>
+</head>
+
+<body>
+    <header class="header" id="Inicio">
+        <nav class="menu-navegacion">
+            <a href="#Inicio">Inicio</a>
+            <a href="#Lenguajes">Lenguajes</a>
+            <a href="#Libros">Libros</a>
+            <a href="#Youtube">Youtube</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Mario Duran</h1>
+            <h2>"La vida es un puente. Cruzalo, pero no te quedes en él"</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C201.14,138.64 347.29,3.47 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <!-- Parte de los lenguajes de programación -->
+        <section class="contenedor" id="Lenguajes">
+            <h2 class="titulo">Lenguajes de Programación</h2>
+            <div class="contenedor-lenguajes">
+                <img src="./img/imagen de lenguajes.jpg" alt="" class="imagen-lenguajes">
+            </div>
+            <div class="contenido-textos">
+                <div class="proyecto">
+                    <h3><span>1</span>C++</h3>
+                    <p>Con el paso del tiempo comencé a utilizar este lenguaje preferentemente por fines academicos, entre
+                        entre ellos se encuentran algunos proyectos como "Nile". Visible en GitHub y conocimiento de estructuras
+                        de datos con este mismo lenguaje</p>
+                </div>
+                <div class="img-proyectos">
+                    <img src="./img/nile.JPG" alt="" class="imagen-proyectos">
+                </div>
+                <div class="proyecto">
+                    <h3><span>2</span>C#</h3>
+                    <p>Para este esécial lenguaje de programacion realicé algunos proyectos como "Genex-Sys". También visile en
+                        GitHub. Su enfoque es más a interfaces de escritorio con Windows forms. Pero es un proyecto que realmente
+                        disfruto haber aprendido. </p>
+                </div>
+                <div class="imagen-port" onclick="link()">
+                    <img src="./img/drive.png" alt="">
+                    <div class="hover-galeria">
+                        <p>Accede al link</p>
+                        <img src="./img/iconoEntrar.png" alt="">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <h3><span>3</span>MySQL</h3>
+                    <p>Este lenguaje de programación va de la mano con muchos de los anteriores, puesto para realizar Genex-Sys
+                        se necesito un sistema de bases de datos para acumular una gran cantidad de archivos, también es accesible
+                        a la base de datos mediante GitHub por codigo binario</p>
+                </div>
+                <div class="imagen-port" onclick="link()">
+                    <img src="./img/drive.png" alt="">
+                    <div class="hover-galeria">
+                        <p>Accede al link</p>
+                        <img src="./img/iconoEntrar.png" alt="">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <h3><span>4</span>Python</h3>
+                    <p>En la actualidad es el lenguaje de programación al que más le estoy dedicando tiempo, puesto su enfoque es 
+                        realizar más tareas en menor tiempo posible. Me encuentro estudiando la "Escuela de Data Scientist" en 
+                        Platzi para conocer un poco más sobre este mundo</p>
+                </div>
+                <div class="proyecto">
+                    <h3><span>5</span>HTML, Css, JavaScript</h3>
+                    <p>Sin duda alguna este proyecto de codigo abierto es el que se está viendo ahora, no tengo gusto por el diseño.
+                        Realmente prefiero la parte lógica y compleja de los datos. Pero espero esto sea considerable como experiencia</p>
+                </div>
+                <div class="proyecto">
+                    <h3><span>5</span>React Native</h3>
+                    <p>Aunque este es un lenguaje de programación enfocado a tener "html, css y javascript" en un mismo entorno. Logré 
+                        ejecutar una aplicación para Android y iOS. Esta va de la mano con una base de datos en la nube de la cual se accede
+                        mediante XmlRequest</p>
+                </div>
+            </div>
+        </section>
+        <!-- Aqui debe ir la parte de los proyectos -->
+        <!-- Parte de los libros -->
+        <section class="libros" id="Libros">
+            <div class="contenedor">
+                <h2 class="titulo">Libros favoritos</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="./img/arrancameLaVida.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Arrancame la vida</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/caballoDeTroya2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Caballo de Troya 2</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/conversacionesConDiosII.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Conversaciones con Dios II</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/entrevistaConElVampiro.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Entrevista con el vampiro</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/golemXIV.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Golem XIV</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/hannibalElOrigenDelMal.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Hannibal el origen del mal</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/laDivinaComedia.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>La Divina Comedia</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="./img/memoriasDeLaCasaMuerta.jpg" alt="">
+                        <div class="hover-galeria">
+                            <p>Memorias de la casa muerta</p>
+                            <img src="./img/iconoEntrar.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="yotube" id="Youtube">
+            <div class="contenedor">
+                <h2 class="titulo">Prueba de youtube con archivos Json</h2>
+                <div class="galeria-port" id="youtube">
+                    <!-- imagenes aqui -->
+                </div>
+                <script async defer crossorigin="anonymous"
+                    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="6HsICruu"></script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer" id="Contacto">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>+52 3317953448</p>
+            </div>
+            <div class="content-foo">
+                <h4>E-mail</h4>
+                <p>marioduranm@hotmail.com</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; MarioDM</h2>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="datos.js"></script>
+    <!-- YouTube -->
+    <!-- AIzaSyA4XorSjdlx1WAESJgiKgJaNPEahyTsMmw -->
+    <!-- VGAMA -->
+    <!-- UCwM4o1t8iRs9Jdan9NhQgWg -->
+</body>
+
+</html>
