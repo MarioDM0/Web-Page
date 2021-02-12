@@ -8,8 +8,7 @@ var paginas = 1;
 var key = "AIzaSyA4XorSjdlx1WAESJgiKgJaNPEahyTsMmw";
 var idCanal = "UCwM4o1t8iRs9Jdan9NhQgWg";
 var url = "https://www.googleapis.com/youtube/v3/search?key=" + key + "&channelId=" + idCanal + "&part=snippet,id&order=date&maxResults=" + resPorPagina;
-$.getJSON(url, function (data) {    
-    
+$.getJSON(url, function (data) {
     for ( i in data.items ){ 
         //Hacer reseña
         var reseña  = document.createElement("p"), contenido = document.createTextNode("Video"); 
@@ -21,14 +20,16 @@ $.getJSON(url, function (data) {
         img.setAttribute("alt","");
 
         //Crear el nombre del video
-        var videoName  = document.createElement("p"), contenido = document.createTextNode(data.items[i]["snippet"].title); 
+        var videoName  = document.createElement("p"), contenido = document.createTextNode(data.items[i]["snippet"].title);
         arrNames.push(data.items[i]["snippet"].title);                
         videoName.setAttribute("id",data.items[i]["snippet"].title);
         videoName.append(contenido);        
 
         //Crear div
         var divHover = document.createElement("div");
-        divHover.setAttribute("onclick","youtube()");
+        var str = "youtube(\'" + arrNames[i] + "\')";
+        console.log(str);
+        divHover.setAttribute("onclick",str);
         divHover.setAttribute("class","hover-galeria");
         divHover.append(videoName);
         divHover.append(img);
@@ -54,15 +55,16 @@ $.getJSON(url, function (data) {
     }    
 });
 
-function youtube(){                    
+function youtube(nombre){           
+    console.log(nombre);          
     for ( var i = 0 ; i < arrNames.length ; i++ ){
         var divHover = document.getElementById(arrNames[i]);            
-        for( var j = 0 ; j < arrNames.length ; i++ ){
-            if ( divHover.textContent == arrNames[i] ){
-                window.open(arrLinks[i]);
-                break;
-            }        
-        }
+        if ( divHover.textContent == nombre ){
+            console.log(arrNames[i]);
+            console.log(divHover.textContent);
+            window.open(arrLinks[i]);
+            break;
+        }        
     }
 }
 
